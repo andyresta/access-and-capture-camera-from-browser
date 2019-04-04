@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Access and capture your camera from browser</title>
 </head>
 <body align="center">
 <video id="video" playsinline width="640" height="480" autoplay></video>
@@ -17,7 +17,7 @@
 var video = document.getElementById('video');
 		// Get access to the camera!
 	if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-	    // Not adding `{ audio: true }` since we only want video now
+	  // Not adding `{ audio: true }` since we only want video now
 	    navigator.mediaDevices.getUserMedia(
       /* if you want to use back camera
        {
