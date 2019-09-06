@@ -61,7 +61,7 @@ var video = document.getElementById('video');
 // Trigger photo take
 document.getElementById("snap").addEventListener("click", function() {
 	context.drawImage(video, 0, 0, 640, 480);
-	var canvasbase64=document.getElementById('canvas').toDataURL("image/png");
+	var canvasbase64=document.getElementById('canvas').toDataURL("image/jpeg");
 	document.getElementById('base64image').value=canvasbase64;
 	/* ant then you just try <img src="the value of #base64image above" />  to preview your captured*/
 });
